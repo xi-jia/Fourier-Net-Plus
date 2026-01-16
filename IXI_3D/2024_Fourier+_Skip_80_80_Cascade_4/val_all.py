@@ -122,7 +122,6 @@ def Validate():
 #    loss_Jdet = neg_Jdet_loss
 
     transform = SpatialTransform().to(device)
-    # init_dict = torch.load('/bask/projects/d/duanj-ai-imaging/Accreg/brain/Learn_FFT_40_48_56/LRL2ss_1_Chan_8_Smth_1000000.0_LR_0.0001/SYMNet_160000.pth')
     diff_transform = DiffeomorphicTransform(time_step=7).to(device)
 
 
